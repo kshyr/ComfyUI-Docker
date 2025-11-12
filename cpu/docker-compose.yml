@@ -1,5 +1,4 @@
 services:
-
   comfyui:
     init: true
     container_name: comfyui-cpu
@@ -20,3 +19,8 @@ services:
     env_file: .env
     #environment:
     #  - CLI_ARGS="--cpu"
+
+networks:
+  default:
+    name: net
+    external: true
